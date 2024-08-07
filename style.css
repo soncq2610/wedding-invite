@@ -137,15 +137,27 @@ select {
 .text-24 {
   font-size: 1.5rem;
 }
+.text-34 {
+  font-size: 2.125rem;
+}
 .text-40 {
   font-size: 2.5rem;
+}
+.text-47 {
+  font-size: 2.938rem;
 }
 .text-50 {
   font-size: 3.125rem;
 }
 
 .parallax-mirror {
-  background-image: url("./assets/images/header-bg.jpg");
+  /* background-image: url("./assets/images/header-bg.jpg"); */
+  background: linear-gradient(
+      to top,
+      rgba(80, 80, 80, 1),
+      rgba(240, 240, 240, 0.02)
+    ),
+    url("./assets/images/header-bg.jpg");
   height: 100vh;
   color: white;
 
@@ -187,4 +199,36 @@ section {
 
 .font-amatic {
   font-family: "Amatic SC";
+}
+
+.fa-heartbeat {
+  animation: beat 0.9s infinite;
+}
+
+@keyframes beat {
+  0% {
+    transform: scale(1);
+  }
+  /* 20% {
+    transform: scale(1.1);
+  } */
+  40% {
+    transform: scale(1.2);
+  }
+}
+
+/* countdown */
+
+.countDown {
+  color: white;
+  background-image: url("./assets/images/countdown-bg.jpg");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cd-message {
+  margin-bottom: 8rem;
 }
