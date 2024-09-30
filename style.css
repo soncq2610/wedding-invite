@@ -288,11 +288,77 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .header-title h1 {
+    font-size: 50px;
+  }
+
   .column {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
   }
+}
+
+/* flip-invite */
+.invite-flip {
+  /* or any other parent wrapper */
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+  height: 700px;
+  overflow: hidden;
+}
+
+.book {
+  display: flex;
+  width: 500px;
+  pointer-events: none;
+  transform-style: preserve-3d;
+  transition: translate 1s;
+  translate: calc(min(var(--c), 1) * 50%) 0%;
+}
+
+.page {
+  --z: 5px;
+
+  flex: none;
+  display: flex;
+  width: 100%;
+  pointer-events: all;
+  user-select: none;
+  transform-style: preserve-3d;
+  border: 1px solid rgba(10, 10, 10, 0.555);
+  box-shadow: 5px #242121;
+  transform-origin: left center;
+  transition: transform 1s,
+    rotate 1s ease-in
+      calc((min(var(--i), var(--c)) - max(var(--i), var(--c))) * 50ms);
+  translate: calc(var(--i) * -100%) 0px 0px;
+  transform: translateZ(calc((var(--c) - var(--i) - 0.5) * var(--z)));
+  rotate: 0 1 0 calc(clamp(0, var(--c) - var(--i), 1) * -180deg);
+}
+
+.front,
+.back {
+  flex: none;
+  width: 100%;
+  padding: 2rem;
+  backface-visibility: hidden;
+  background-color: #fff;
+  translate: 0px;
+}
+
+.back {
+  background-image: linear-gradient(to right, #fff 80%, #f0efef 100%);
+  translate: -100% 0;
+  rotate: 0 1 0 180deg;
+}
+
+.page img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* footer  */

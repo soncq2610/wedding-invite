@@ -23,3 +23,29 @@ var x = setInterval(function () {
     document.getElementById("seconds").innerHTML = "00";
   }
 }, 1000);
+
+const flipBook = (elBook) => {
+  elBook.style.setProperty("--c", 0);
+
+  elBook.querySelectorAll(".page").forEach((page, i) => {
+    page.style.setProperty("--i", i);
+
+    page.addEventListener("click", (evt) => {
+      const isBack = !!evt.target.closest(".back");
+      const isFrontPage2 = i === 1 && !isBack;
+
+      let c;
+      if (isBack) {
+        c = i;
+      } else if (isFrontPage2) {
+        c = 0;
+      } else {
+        c = i + 1;
+      }
+
+      elBook.style.setProperty("--c", c);
+    });
+  });
+};
+
+document.querySelectorAll(".book").forEach(flipBook);

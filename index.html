@@ -1,8 +1,11 @@
-<html lang="en">
+<html
+  lang="en"
+  xmlns="http://www.w3.org/1999/xhtml"
+  xmlns:fb="http://ogp.me/ns/fb#"
+>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +20,6 @@
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -28,15 +30,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
     <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
-
-
     <link rel="stylesheet" href="./style.css" />
     <title>Công Sơn & Yến Linh</title>
-    <meta property="og:image:width" content="450"/>
-    <meta property="og:image:height" content="298"/>
-    <meta property="og:image" content="https://raw.githubusercontent.com/soncq2610/wedding-invite/refs/heads/main/assets/images/countdown-bg.jpg" />
+    <meta property="og:image:width" content="450" />
+    <meta property="og:image:height" content="298" />
+    <meta
+      property="og:image"
+      content="https://raw.githubusercontent.com/soncq2610/wedding-invite/refs/heads/main/assets/images/countdown-bg.jpg"
+    />
     <meta
       property="og:title"
       content="Thiệp mời cưới, Ngày 02 Tháng 11 Năm 2024"
@@ -171,7 +173,6 @@
           <div class="text-34 font-greateVibe">...until we get merried!</div>
         </div>
       </div>
-      <script src="./script.js"></script>
     </section>
     <!--Section Event-->
     <section id="event" class="section">
@@ -184,9 +185,30 @@
             friends. Thank you so much for visiting our wedding website!
           </p>
         </div>
-        <div class="text-center mb-5">
-          <img width="700px" src="./assets/images/nhagai.png" alt="" />
+        <!-- flip-invite -->
+        <div class="invite-flip">
+          <div class="book">
+            <div class="page">
+              <div class="front">
+                <img src="assets/images/bia-thiep.jpg" alt="" />
+              </div>
+              <div class="back">
+                <img src="assets/images/nhatrai.png" alt="" />
+              </div>
+            </div>
+
+            <div class="page">
+              <div class="front">
+                <img src="assets/images/nhagai.png" alt="" />
+              </div>
+              <div class="back">
+                <img src="https://picsum.photos/500/400" alt="Img 1" />
+              </div>
+            </div>
+          </div>
         </div>
+
+        <!-- end-flip -->
         <div class="d-flex justify-content-center gap-5">
           <div>
             <div class="text-center">
@@ -280,7 +302,7 @@
             <img src="https://picsum.photos/200/300" style="width: 100%" />
           </div>
           <div class="column">
-            <img src="https://picsum.photos/200/300" style="width: 100%" />
+            <img src="https://picsum.photos/200/300" style="width: 100%" />`
             <img src="https://picsum.photos/200/300" style="width: 100%" />
           </div>
         </div>
@@ -304,6 +326,6 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script></script>
+    <script src="./script.js"></script>
   </body>
 </html>
