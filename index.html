@@ -32,6 +32,7 @@
     />
     <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Công Sơn & Yến Linh</title>
     <meta property="og:image:width" content="450" />
     <meta property="og:image:height" content="298" />
@@ -56,20 +57,23 @@
           <div
             class="header-title d-flex justify-content-center align-items-end"
           >
-            <div class="">
+            <div class="" data-aos="fade-up" data-aos-duration="2000">
               <h1 id="banner-title">Save The Date</h1>
               <div class="d-flex justify-content-center">
                 <span
-                  class="text-18 fw-light px-3 d-flex justify-content-center flex-column"
+                  class="banner-locate text-18 fw-light d-flex justify-content-center flex-column"
                   >Yên Dũng <br />
                   Bắc Giang</span
                 >
+                <div
+                  class="banner-name text-40 fw-medium font-greateVibe border-end border-start border-2 border-white"
+                  >
+                  <div>Công Sơn</div> 
+                  <div>&nbspvà&nbsp</div> 
+                  <div>Yến Linh</div> 
+                  </div>
                 <span
-                  class="text-40 fw-medium font-greateVibe px-3 border-end border-start border-2 border-white d-flex justify-content-center flex-column"
-                  >Công Sơn và Yến Linh</span
-                >
-                <span
-                  class="text-18 fw-light px-3 d-flex justify-content-center flex-column"
+                  class="banner-date text-18 fw-light d-flex justify-content-center flex-column"
                   >02 - 11<br />
                   (Dương lịch)</span
                 >
@@ -83,23 +87,23 @@
     <!--Section About Us-->
     <section id="aboutUs" class="section">
       <div class="container">
-        <div class="text-center mb-5">
-          <h2 class="font-greateVibe text-50">Hello</h2>
+        <div class="text-center mb-5" data-aos="zoom-in" data-aos-duration="1000">
+          <h2 class="font-greateVibe text-50" >Hello</h2>
           <p class="text-18">Xin chào tất cả mọi người</p>
         </div>
-        <div class="d-flex justify-content-center align-items-center gap-4">
-          <div class="broomInfor d-flex gap-5">
+        <div class="introduce-info gap-4">
+          <div class="broomInfor" data-aos="fade-right" data-aos-duration="1000">
             <div
-              class="d-flex flex-column justify-content-center align-items-center"
+              class="person-info"
             >
-              <h3 class="text-end w-100 nameText">Công Sơn</h3>
-              <p class="text-end">
+              <h3 class=" w-100 nameText">Công Sơn</h3>
+              <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam
               </p>
             </div>
-            <div>
+            <div >
               <img
                 src="./assets/images/groom.jpg"
                 alt="img"
@@ -110,10 +114,10 @@
               />
             </div>
           </div>
-          <div class="heartIC">
+          <div class="heartIC" data-aos="zoom-in" data-aos-duration="500">
             <i class="fa fa-heartbeat" style="font-size: 32px; color: red"></i>
           </div>
-          <div class="brideInfor d-flex gap-5">
+          <div class="brideInfor" data-aos="fade-left" data-aos-duration="1000">
             <div>
               <img
                 src="./assets/images/bride.jpg"
@@ -124,10 +128,10 @@
               />
             </div>
             <div
-              class="d-flex flex-column justify-content-center align-items-center"
+              class="person-info "
             >
-              <h3 class="text-start w-100 nameText">Yến Linh</h3>
-              <p class="text-start">
+              <h3 class=" w-100 nameText">Yến Linh</h3>
+              <p class="">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam
@@ -327,5 +331,9 @@
       crossorigin="anonymous"
     ></script>
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
