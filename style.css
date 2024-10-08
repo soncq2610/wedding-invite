@@ -162,7 +162,7 @@ select {
   color: white;
 
   background-attachment: fixed;
-  background-position: center;
+  background-position: center -5%;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -261,7 +261,6 @@ section {
 
 #countDown {
   color: white;
-  height: 50%;
   /* background-image: url("./assets/images/countdown-bg.jpg"); */
   background: linear-gradient(
       to top,
@@ -397,10 +396,9 @@ h3 {
 /* footer  */
 
 #footer {
+  color: white;
   height: 100vh;
   background-image: url("./assets/images/footerImg.jpg");
-
-  /* background-attachment: fixed; */
   background-position: 95% center;
   background-repeat: no-repeat;
   background-size: cover;
