@@ -490,6 +490,10 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .timeImg {
+    width: 270px;
+    height: 270px;
+  }
 }
 
 @media screen and (max-width: 600px) {
