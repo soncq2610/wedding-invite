@@ -7,7 +7,7 @@ html {
 body {
   margin: 0;
   height: 100%;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 1rem;
 }
 
@@ -157,7 +157,7 @@ select {
       rgba(80, 80, 80, 1),
       rgba(240, 240, 240, 0.02)
     ),
-    url('./assets/images/header-bg.jpg');
+    url("./assets/images/header-bg.jpg");
   height: 100vh;
   color: white;
 
@@ -173,7 +173,7 @@ select {
 }
 
 .header-title h1 {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
   font-weight: 700;
   font-size: 150px;
 }
@@ -187,6 +187,7 @@ select {
 .banner-name {
   padding: 3rem;
   display: flex;
+  font-size: 50px;
   gap: 8px;
   justify-content: center;
   align-items: center;
@@ -233,11 +234,11 @@ section {
 }
 
 .font-greateVibe {
-  font-family: 'Great Vibes', cursive;
+  font-family: "Great Vibes", cursive;
 }
 
 .font-amatic {
-  font-family: 'Amatic SC';
+  font-family: "Amatic SC";
 }
 
 .fa-heartbeat {
@@ -260,12 +261,25 @@ section {
 
 #countDown {
   color: white;
-  background-image: url('./assets/images/countdown-bg.jpg');
-
+  height: 50%;
+  /* background-image: url("./assets/images/countdown-bg.jpg"); */
+  background: linear-gradient(
+      to top,
+      rgb(99, 90, 90),
+      rgba(240, 240, 240, 0.02)
+    ),
+    url("./assets/images/countdown-bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.count-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
 }
 
 .cd-message {
@@ -384,9 +398,10 @@ h3 {
 
 #footer {
   height: 100vh;
-  background-image: url('./assets/images/footerImg.jpg');
+  background-image: url("./assets/images/footerImg.jpg");
+
   /* background-attachment: fixed; */
-  background-position: center;
+  background-position: 95% center;
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -427,6 +442,23 @@ h3 {
 }
 
 @media screen and (max-width: 600px) {
+  .parallax-mirror {
+    /* background-image: url("./assets/images/header-bg.jpg"); */
+    background: linear-gradient(
+        to top,
+        rgba(80, 80, 80, 1),
+        rgba(240, 240, 240, 0.02)
+      ),
+      url("./assets/images/mobileBanner.jpg");
+    height: 100vh;
+    color: white;
+
+    background-attachment: scroll;
+    background-position: 48% center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
   .header-title h1 {
     font-size: 50px;
   }
@@ -476,5 +508,20 @@ h3 {
     -ms-flex: 100%;
     flex: 100%;
     max-width: 100%;
+  }
+
+  .count-box {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  #footer {
+    background-position: 51% center;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .banner-name {
+    font-size: 28px;
   }
 }
