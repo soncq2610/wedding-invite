@@ -307,6 +307,10 @@ section {
   letter-spacing: 2px;
 }
 
+.count-bg-mobile {
+  display: none;
+}
+
 h3 {
   font-weight: 500;
   font-size: 24px;
@@ -478,6 +482,7 @@ h3 {
   }
 
   .count-bg-mobile {
+    display: block;
     position: absolute;
     z-index: 0;
     top: 0;
@@ -760,4 +765,11 @@ h3 {
     left: 50px;
     right: inherit;
   }
+}
+
+[data-aos] {
+  visibility: hidden;
+}
+[data-aos].animate__animated {
+  visibility: visible;
 }

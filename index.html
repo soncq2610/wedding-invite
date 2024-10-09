@@ -13,6 +13,10 @@
       rel="stylesheet"
     />
     <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
       href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
@@ -57,7 +61,7 @@
           <div
             class="header-title d-flex justify-content-center align-items-end"
           >
-            <div class="" data-aos="fade-up" data-aos-duration="2000">
+            <div class="" data-aos="animate__bounce">
               <h1 id="banner-title">Save The Date</h1>
               <div class="d-flex justify-content-center">
                 <span
@@ -87,11 +91,7 @@
     <!--Section About Us-->
     <section id="aboutUs" class="section">
       <div class="container">
-        <div
-          class="text-center mb-5"
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-        >
+        <div class="text-center mb-5" data-aos="animate__bounce">
           <h2 class="font-greateVibe text-50">Hello</h2>
           <p class="text-18">Xin chào tất cả mọi người</p>
         </div>
@@ -434,7 +434,9 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        disable: window.innerWidth < 768,
+        useClassNames: true,
+        initClassName: false,
+        animatedClassName: "animate__animated",
       });
     </script>
   </body>
