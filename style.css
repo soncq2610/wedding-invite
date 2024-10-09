@@ -766,10 +766,3 @@ h3 {
     right: inherit;
   }
 }
-
-[data-aos] {
-  visibility: hidden;
-}
-[data-aos].animate__animated {
-  visibility: visible;
-}
